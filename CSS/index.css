@@ -115,11 +115,16 @@ html, body{
 }
 #footerimgW{
 	margin-top: 190px;
+	margin-right: 20px;
+}
+#footerimgW >a>img{
 	margin-right: 10px;
+	border-radius: 8px;	
 }
 #page{
     min-height: 100%;
 }
+
 .login-form{
 	width: 500px;
 	margin-top: 0;
@@ -155,6 +160,7 @@ html, body{
 	padding: 0 5px;
 	height: 40px;
   }
+
   
   .logbtn{
 	display: block;
