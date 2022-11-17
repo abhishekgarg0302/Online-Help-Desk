@@ -1,0 +1,18 @@
+user "root"
+host "localhost"
+db "helpdesk"
+pass ""
+49.36.235.243
+
+CREATE table helpdesk.user_registration(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+    userid varchar(12) not null UNIQUE,
+    fullname varchar(50) Not NUll,
+    email varchar(100) NOT NULL,
+    username varchar(50) Not NULL UNIQUE,
+    pass varchar(100) not NUll,
+    course tinyint(1),
+    usertype tinyint(1)
+)ENGINe=INNODB;
+
+INSERT INTO `user_registration` (`id`, `userid`, `fullname`, `email`, `username`, `pass`, `course`, `usertype`) VALUES ('1', 'B190552', 'Abhishek Garg', 'abhishekg0302garg@gmail.com', 'altruistic0302', '1234', '1', '1');
