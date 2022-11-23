@@ -5,32 +5,37 @@
 </head>
 
 <body id="bo">
-	<a href="../index.html" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
+	<a href="../index.php" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
 	<div class="dropdown" style="float:right;" id="accbtn">
 		<button class="btn btn1 dropbtn1">User Login</button>
 		<div class="dropdown-content">
-			<a href="../index.html">Student Login</a>
-			<a href="College Head Login.html">College Head Login</a>
-			<a href="#">Faculty Head Login</a>
+			<a href="../index.php">Student Login</a>
+			<a href="College Head Login.php">College Head Login</a>
+			<a href="Faculty Head Login.php">Faculty Head Login</a>
 		</div>
 	</div>
-    <form method="POST" action="../PHP/Faculty Head Login.php" class="login-form">
-		<h1 class="ha1">Faculty Head Login</h1>
+	<form method="POST" action="../PHP/Forgot password_db.php" class="login-form">
+		<h1 class="ha1">Change Password</h1>
 		<div class="txtb">
-			<input type="text" placeholder="Faulty ID" id="fid" name="fid" required>
-		</div>
-        <div class="txtb">
-			<input type="text" placeholder="Username" id="cid" name="username" required>
+			<center><input type="email" placeholder="Enter Your E-mail" name="email" id="email" required><br></center>
 		</div>
 		<div class="txtb">
-			<input type="password" placeholder="Password" id="pass" name="password" required>
+			<center><input type="password" placeholder="Enter Your New Password" id="password" name="password"
+					pattern=".{8,}" required></center>
+		</div>
+		<div class="txtb">
+			<center><input type="password" placeholder="Re-Enter the Password" id="repass" required></center>
+		</div>
+		<div class="select txtb">
+			<select id="user-type" name="unicourse" class="unicourse" required>
+				<option>Student</option>
+				<option>Faculty Head</option>
+				<option>College Head</option>
+			</select>
 		</div>
 
-		<input type="submit" class="logbtn" value="Login" name="submit">
+		<center><input type="submit" class="logbtn" value="Update" name="submit"></center>
 
-		<div class="bottom-text">
-			<a href="Forgot password page.html">Forgot the Password</a>
-		</div>
 	</form>
 	<div id="page"></div>
 	<div class="footer">
