@@ -1,6 +1,6 @@
 <?php
 session_start();
-$PATH="C:\xampp\htdocs\OHD";
+// $PATH="C:\xampp\htdocs\OHD";
 $error='';
 if(isset($_POST['submit'])){
  if(empty($_POST['cid']) || empty($_POST['password'])||empty($_POST['username'])){
@@ -24,14 +24,12 @@ if(isset($_POST['submit'])){
  if($rows == 1){
     $_SESSION['username']=$username;
     $_SESSION['userid']= $cid;
-    // echo 'successul login';
-    header("Location: ../success.html");
+   //  echo 'successul login';
+   header("Location: ../success.html");
  }
  else
  {
-  //  %error ="Enter Valid Credentials";  
-  //  header("Location:https://stackoverflow.com/questions/4871942/how-to-redirect-to-another-page-using-php");    
-  echo 'database failed';
+   echo '<script>alert("Please enter valid credentials");</script>';
 }
  mysqli_close($conn);
  }

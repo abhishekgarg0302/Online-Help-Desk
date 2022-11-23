@@ -14,7 +14,8 @@
 			<a href="HTML/Faculty Head Login.html">Faculty Head Login</a>
 		</div>
 	</div>
-	<form method="POST" action="PHP/Student Login.php" class="login-form">
+	<?php include './PHP/Student Login.php'?>
+	<form method="post" class="login-form">
 		<h1 class="ha1">Sign in</h1>
 		<div class="txtb">
 			<input type="text" placeholder="College ID" id="cid" name="cid" required>
@@ -56,3 +57,4 @@
 </body>
 
 </html>
+
