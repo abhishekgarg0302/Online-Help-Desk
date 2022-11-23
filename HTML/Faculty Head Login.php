@@ -5,22 +5,23 @@
 </head>
 
 <body id="bo">
-	<a href="../index.html" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
+	<a href="../index.php" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
 	<div class="dropdown" style="float:right;" id="accbtn">
 		<button class="btn btn1 dropbtn1">User Login</button>
 		<div class="dropdown-content">
-			<a href="../index.html">Student Login</a>
-			<a href="#">College Head Login</a>
-			<a href="Faculty Head Login.html">Faculty Head Login</a>
+			<a href="../index.php">Student Login</a>
+			<a href="College Head Login.php">College Head Login</a>
+			<a href="#">Faculty Head Login</a>
 		</div>
 	</div>
-    <form method="POST" action="../PHP/College Head Login.php" class="login-form">
-		<h1 class="ha1">College Head Login</h1>
+	<?php require '../PHP/Faculty Head Login.php'?>
+    <form method="POST"  class="login-form">
+		<h1 class="ha1">Faculty Head Login</h1>
 		<div class="txtb">
-			<input type="text" placeholder="Unique ID" id="cid" name="cid" required>
+			<input type="text" placeholder="Faulty ID" id="fid" name="fid" required>
 		</div>
         <div class="txtb">
-			<input type="text" placeholder="Username" id="cid" name="username" required>
+			<input type="text" placeholder="Username" id="username" name="username" required>
 		</div>
 		<div class="txtb">
 			<input type="password" placeholder="Password" id="pass" name="password" required>
@@ -29,7 +30,7 @@
 		<input type="submit" class="logbtn" value="Login" name="submit">
 
 		<div class="bottom-text">
-			<a href="Forgot password page.html">Forgot the Password</a>
+			<a href="Forgot password page.php">Forgot the Password</a>
 		</div>
 	</form>
 	<div id="page"></div>

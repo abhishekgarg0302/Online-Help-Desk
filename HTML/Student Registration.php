@@ -5,17 +5,18 @@
 </head>
 
 <body id="bo">
-    <a href="../index.html" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
+    <a href="../index.php" class="logo"><img src="../IMAGES/logo.png" width="110px" height="110px"></a>
     <div class="dropdown" style="float:right;" id="accbtn">
         <button class="btn btn1 dropbtn1">User Login</button>
         <div class="dropdown-content">
-            <a href="../index.html">Student Login</a>
+            <a href="../index.php">Student Login</a>
             <a href="#">College Head Login</a>
-            <a href="Faculty Head Login.html">Faculty Head Login</a>
+            <a href="Faculty Head Login.php">Faculty Head Login</a>
         </div>
     </div>
     <!-- <div class="login-form"> -->
-    <form method="POST" action="../PHP/Student Register.php" onsubmit="return cla()" class="signup-form login-form">
+        <?php require '../PHP/Student Register.php'?>
+    <form method="POST" onsubmit="return cla()" class="signup-form login-form">
         <h1 class="ha1">Sign Up</h1>
 
         <div class="txtb">
@@ -46,7 +47,7 @@
         </div>
         <input type="submit" class="logbtn" value="Create Account" name="submit">
         <div class="bottom-text">
-            <a href="../index.html">Already Have one ?</a>
+            <a href="../index.php">Already Have one ?</a>
         </div>
     </form>
     <!-- </div> -->
