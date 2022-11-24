@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Successful login</h1>
+<?php 
+    require 'header.php';
+    // require 'collegeheadbody.php';
+    require 'footer.php';
+?>  
 </body>
 </html>

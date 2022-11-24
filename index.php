@@ -7,7 +7,7 @@
 	<div class="dropdown" style="float:right;" id="accbtn">
 		<button class="btn btn1 dropbtn1">User Login</button>
 		<div class="dropdown-content">
-			<a href="index.php">Student Login</a>
+			<!-- <a href="index.php">Student Login</a> -->
 			<a href="HTML/College Head Login.php">College Head Login</a>
 			<a href="HTML/Faculty Head Login.php">Faculty Head Login</a>
 		</div>

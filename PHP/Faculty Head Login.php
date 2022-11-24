@@ -22,10 +22,14 @@ if(isset($_POST['submit'])){
  $rows = mysqli_num_rows($query);
 // <h1>echo $rows</h1>
  if($rows == 1){
-    $_SESSION['username']=$username;
-    $_SESSION['userid']= $fid;
+  $_SESSION['username']=$username;
+  $_SESSION['userid']= $cid;
+  $name=mysqli_query($conn, "SELECT fullname FROM user_registration WHERE pass='$pass' AND username='$username' AND userid='$fid' AND usertype=2");
+  $fullname = mysqli_fetch_assoc($name);
+  $_SESSION['name']=$fullname['fullname'];
+  $_SESSION['usertype']="Faculty";
    //  echo 'successul login';
-   header("Location: ../success.html");
+   header("Location: ../HTML/FacultyIntPage.php");
  }
  else
  {

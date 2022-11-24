@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<link rel="stylesheet" href="../CSS/College Head.css">
 </head>
@@ -10,7 +9,7 @@
 		<button class="btn btn1 dropbtn1">User Login</button>
 		<div class="dropdown-content">
 			<a href="../index.php">Student Login</a>
-			<a href="#">College Head Login</a>
+			<!-- <a href="#">College Head Login</a> -->
 			<a href="Faculty Head Login.php">Faculty Head Login</a>
 		</div>
 	</div>
@@ -21,7 +20,7 @@
 			<input type="text" placeholder="Unique ID" id="cid" name="cid" required>
 		</div>
         <div class="txtb">
-			<input type="text" placeholder="Username" id="cid" name="username" required>
+			<input type="text" placeholder="Username" id="username" name="username" required>
 		</div>
 		<div class="txtb">
 			<input type="password" placeholder="Password" id="pass" name="password" required>
@@ -54,5 +53,4 @@
 		</div>
 	</div>
 </body>
-
 </html>
