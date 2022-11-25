@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="../CSS/College Head.css">
 </head>
@@ -15,25 +14,39 @@
         </div>
     </div>
     <!-- <div class="login-form"> -->
-        <?php require '../PHP/Student Register.php'?>
+  <?php 
+//   require '../PHP/Student Register.php'
+?> 
     <form method="POST" onsubmit="return cla()" class="signup-form login-form">
         <h1 class="ha1">Sign Up</h1>
 
         <div class="txtb">
             <input type="text" placeholder="Enter Your Full Name" id="fname" name="fname" required>
         </div>
+        <p class=err-msg id=error-fname>please enter valid credentials</p>
+        <div class="txtb">
+            <input type="text" placeholder="Enter a Unique Username" id="username" name="username" required>
+        </div>
+        <p class=err-msg id=error-username></p>
+
         <div class="txtb">
             <input type="email" placeholder="Enter your Email" id="email" name="email" required>
         </div>
+        <p class=err-msg id=error-fname></p>
+
         <div class="txtb">
             <input type="text" placeholder="Enter your College ID" id="cid" name="cid" required>
         </div>
+        <p class=err-msg id=error-cid></p>
+
         <div class="txtb">
             <input type="password" placeholder="Enter your Password" id="pass" name="password" required>
         </div>
         <div class="txtb">
             <input type="password" placeholder="Re-Enter your Password" id="rpass" name="re-password" required>
         </div>
+        <p class=err-msg id=error-password>Please enter valid name</p>
+
         <!-- <label for="unicourse" class="font2">University Coures</label><br> -->
         <div class="select txtb">
             <select id="unicourse" name="unicourse" class="unicourse" required>
@@ -45,6 +58,8 @@
                 <option>Civil Engineering</option>
             </select>
         </div>
+        <p class=err-msg id=error-u>Please enter valid name</p>
+
         <input type="submit" class="logbtn" value="Create Account" name="submit">
         <div class="bottom-text">
             <a href="../index.php">Already Have one ?</a>
@@ -72,5 +87,4 @@
         </div>
     </div>
 </body>
-
 </html>

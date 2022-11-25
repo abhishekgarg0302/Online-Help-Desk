@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 
  $db = mysqli_select_db($conn, "helpdesk");
 
- $query = mysqli_query($conn, "SELECT *  FROM user_registration WHERE pass='$pass' AND username='$username' AND userid='$fid' AND usertype=2");
+ $query = mysqli_query($conn, "SELECT *  FROM user_registration WHERE pass='$pass' AND username=TRIM('$username') AND userid=TRIM('$fid') AND usertype=2");
  
  $rows = mysqli_num_rows($query);
 // <h1>echo $rows</h1>
