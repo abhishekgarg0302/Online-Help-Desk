@@ -36,19 +36,21 @@
 .query-details{
     background-color: rgb(100,100,100) ;
 }
-.query-details>h1{
+.query-details>h3{
     color:white;
     margin-left:20px
 }
 .query-details>p{
     color:white;
     margin-left:20px;
+    margin-bottom: 0;
 }
 .msg-sent{
     max-width: 500px;
     width:fit-content;
     /* margin-left: 100px; */
     /* float:right; */
+    margin-top: 20px;
     display: block;
     position:relative;
     float: right;
@@ -60,9 +62,9 @@
     color:white;
 }
 .div_send{
-    width:100%;
+    /* width:900px; */
     display: block;
-    background: #000;
+    /* background: #000; */
 }
 .msg-received{
     max-width: 500px;
@@ -78,7 +80,7 @@
     border-radius:8px;
     background-color: rgb(100,100,100);
     color:white;
-    margin-top: 50px;
+    margin-top: 100px;
 
 }
 /* p{
@@ -86,7 +88,7 @@
 } */
 .query{
     width:93%;
-    height:40px;
+    min-height:40px;
     margin-left: 3%;
     margin-top: -8px;
     margin-bottom: 16px;
@@ -108,10 +110,11 @@
     border: none;
     padding:10px 12px;
     border-radius: 8px;
+    border: 1px solid black;
 }
 .sent-button{
     padding:10px 14px;
     border-radius: 50%;
-    border: NONE;
+    border: 1px solid black;
     background-color: whitesmoke;
 }
