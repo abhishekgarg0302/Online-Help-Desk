@@ -11,7 +11,7 @@
 		<div class="dropdown-content">
 			<a href="../index.php">Student Login</a>
 			<a href="College Head Login.php">College Head Login</a>
-			<a href="#">Faculty Head Login</a>
+			<!-- <a href="#">Faculty Head Login</a> -->
 		</div>
 	</div>
 	<?php require '../PHP/Faculty Head Login.php'?>

@@ -1,0 +1,26 @@
+.logo{
+    width:80px;
+}
+.pageheader{
+    /* z-index: 100; */
+    display:flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    /* margin-top: 10px; */
+}
+.toggle-position{ 
+    margin-top: 30px !important;
+    /* margin-right: 40px; */
+}
+#logout{
+ display: block;
+ margin: auto;
+}
+.dropdown-item{
+    /* display: block; */
+    /* margin: auto; */
+    text-align: center;
+}
+.dropdown-menu{
+    margin-left: -10px
+}
