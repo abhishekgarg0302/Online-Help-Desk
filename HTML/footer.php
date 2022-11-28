@@ -11,9 +11,9 @@
 			</div>
 			<div class="footer-section links"></div>
 			<div id="footerimgW">
-				<a href="https://web.whatsapp.com/"  target="_blank"><img src="../IMAGES/whatapp.jpg" width="30px" height="30px"></a>
-				<a href="https://www.youtube.com/"  target="_blank"><img src="../IMAGES/youtube.png" width="30px" height="30px"></a>
-				<a href="https://www.facebook.com/"  target="_blank"><img src="../IMAGES/facebook.png" width="30px" height="30px"></a>
+				<a href="https://www.instagram.com/skitjaipurofficial/"  target="_blank"><img src="../IMAGES/instagram.svg" width="30px" height="30px"></a>
+				<a href="https://www.youtube.com/@SKITJaipurOfficial/"  target="_blank"><img src="../IMAGES/youtube.png" width="30px" height="30px"></a>
+				<a href="https://www.facebook.com/SKITJAIP"  target="_blank"><img src="../IMAGES/facebook.png" width="30px" height="30px"></a>
 			</div>
 		</div>
 		<div class="footer-bottom" id="text">
