@@ -1,6 +1,8 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="../CSS/College Head.css">
+    <link rel="stylesheet" href="../CSS/registration form.css">
 </head>
 
 <body id="bo">
@@ -14,51 +16,50 @@
         </div>
     </div>
     <!-- <div class="login-form"> -->
-  <?php 
-//   require '../PHP/Student Register.php'
-?> 
-    <form method="POST" onsubmit="return cla()" class="signup-form login-form">
+    <?php
+      include '../PHP/Student Register.php'
+    ?>
+    <!-- onsubmit="return cla()" -->
+     <form method="POST"  class="signup-form login-form">
         <h1 class="ha1">Sign Up</h1>
-
+        <p id="user_msg">User has been registered. <a href="../index.php">Click Here</a> to login.</p>
         <div class="txtb">
             <input type="text" placeholder="Enter Your Full Name" id="fname" name="fname" required>
         </div>
-        <p class=err-msg id=error-fname>please enter valid credentials</p>
         <div class="txtb">
             <input type="text" placeholder="Enter a Unique Username" id="username" name="username" required>
         </div>
-        <p class=err-msg id=error-username></p>
-
+        <p class=err-msg id=error-username><?= $err_msg_username ?></p>
         <div class="txtb">
             <input type="email" placeholder="Enter your Email" id="email" name="email" required>
         </div>
-        <p class=err-msg id=error-fname></p>
+        <p class=err-msg id=error-email><?= $err_msg_email ?></p>
+        <!-- <p class=err-msg id=error-email>hksdfhhsifh</p> -->
 
         <div class="txtb">
             <input type="text" placeholder="Enter your College ID" id="cid" name="cid" required>
         </div>
-        <p class=err-msg id=error-cid></p>
-
+        <p class=err-msg id=error-collegeID><?= $err_msg_collegeid ?></p>
         <div class="txtb">
             <input type="password" placeholder="Enter your Password" id="pass" name="password" required>
         </div>
         <div class="txtb">
             <input type="password" placeholder="Re-Enter your Password" id="rpass" name="re-password" required>
         </div>
-        <p class=err-msg id=error-password>Please enter valid name</p>
+        <p class=err-msg id=error-password><?= $err_msg_repassword?></p>
 
         <!-- <label for="unicourse" class="font2">University Coures</label><br> -->
         <div class="select txtb">
             <select id="unicourse" name="unicourse" class="unicourse" required>
-                <option>Computer Science and Engineering</option>
-                <option>Information Technology</option>
-                <option>Electrical Engineering</option>
-                <option>Electronics and Communication Engineering</option>
-                <option>Mechanical Engineering</option>
-                <option>Civil Engineering</option>
+                <option value=1>Computer Science and Engineering</option>
+                <option value=2>Information Technology</option>
+                <option value=3>Electrical Engineering</option>
+                <option value=4>Electronics and Communication Engineering</option>
+                <option value=5>Mechanical Engineering</option>
+                <option value=6>Civil Engineering</option>
             </select>
         </div>
-        <p class=err-msg id=error-u>Please enter valid name</p>
+        <!-- <p class=err-msg id=error-u>Please select an option</p> -->
 
         <input type="submit" class="logbtn" value="Create Account" name="submit">
         <div class="bottom-text">
@@ -87,4 +88,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -14,5 +14,6 @@ CREATE table helpdesk.user_registration(
     course tinyint(1),
     usertype tinyint(1)
 )ENGINe=INNODB;
+INSERT INTO `user_registration` (`userid`, `fullname`, `email`, `username`, `pass`, `course`, `usertype`) VALUES ('B190552', 'Abhishek Garg', 'abhishekgarg0302@gmail.com', 'altuistic0302', '1234', '1', '1');
 
-INSERT INTO `/user_registration` (`userid`, `fullname`, `email`, `username`, `pass`, `course`, `usertype`) VALUES ('B190771', 'Akshita Jain', 'akshitajain1906@gmail.com', 'akshitjain1906', '1234', '1', '1');
+INSERT INTO `user_registration` (`userid`, `fullname`, `email`, `username`, `pass`, `course`, `usertype`) VALUES ('B190771', 'Akshita Jain', 'akshitajain1906@gmail.com', 'akshitajain1906', '1234', '1', '1');

@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
  if($rows == 1){
   $_SESSION['username']=$username;
   $_SESSION['userid']= $cid;
-  $name=mysqli_query($conn, "SELECT fullname FROM user_registration WHERE pass='$pass' AND username='$username' AND userid='$fid' AND usertype=2");
+  $name=mysqli_query($conn, "SELECT fullname FROM user_registration WHERE pass='$pass' AND username=TRIM('$username') AND userid=TRIM('$fid') AND usertype=2");
   $fullname = mysqli_fetch_assoc($name);
   $_SESSION['name']=$fullname['fullname'];
   $_SESSION['usertype']="Faculty";
